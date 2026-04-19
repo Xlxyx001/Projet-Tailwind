@@ -1,0 +1,237 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafariPedia – Le Lion d'Afrique</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    body {
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-neutral-900/80 backdrop-blur-sm">
+    <a href="index.html" class="text-white font-bold italic text-xl">SafariPedia</a>
+
+    <ul class="hidden md:flex gap-8 text-xs tracking-widest text-gray-300">
+      <li>
+        <a href="articles.html" class="text-amber-400 border-b border-amber-400 pb-1">PARCOURIR PAR ESPÈCES</a>
+      </li>
+      <li><a href="#" class="hover:text-amber-400 transition">CATÉGORIES</a></li>
+      <li><a href="#" class="hover:text-amber-400 transition">PROFIL</a></li>
+    </ul>
+
+    <button class="text-white text-xl" aria-label="Menu">📖</button>
+  </nav>
+
+
+  <!-- ===================== IMAGE HERO ===================== -->
+  <!-- 💡 Remplace "lion-detail.jpg" par une grande photo du lion -->
+  <div
+    class="w-full h-[60vh] md:h-[75vh]"
+    style="background-image: url('Image/Lion2.jpg'); background-size: cover; background-position: center top;">
+  </div>
+
+
+  <!-- ===================== TITRE ARTICLE ===================== -->
+  <section class="px-6 py-8 max-w-6xl mx-auto">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-sm tracking-widest uppercase">
+        Panthera Leo
+      </span>
+      <span class="text-gray-400 text-xs tracking-widest uppercase">Mammalia · Felidae</span>
+    </div>
+    <h1 class="text-4xl md:text-6xl italic font-bold text-white mb-4">
+      Le Lion d'Afrique
+    </h1>
+    <p class="text-gray-300 text-base md:text-lg max-w-xl leading-relaxed">
+      Le monarque des savanes, symbole de puissance et de structure sociale
+      unique parmi les grands félins.
+    </p>
+  </section>
+
+
+  <!-- ===================== CONTENU + SIDEBAR ===================== -->
+  <section class="px-6 pb-16 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-12">
+
+
+      <!-- ===== COLONNE PRINCIPALE ===== -->
+      <div class="flex-1">
+
+        <!-- Section 1 : Biologie -->
+        <h2 class="text-2xl italic font-bold text-white mb-5 border-b border-neutral-700 pb-3">
+          Biologie et Morphologie
+        </h2>
+
+        <!-- Lettre capitale décorative -->
+        <div class="flex gap-4 mb-4">
+          <span class="text-5xl italic font-bold text-amber-500 leading-none mt-1">L</span>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            le lion d'Afrique est le deuxième plus grand félin après le tigre. Les mâles se distinguent par
+            leur crinière imposante, dont la couleur varie du blond au noir avec l'âge et la santé de
+            l'individu. Ce dimorphisme sexuel est unique chez les félidés. Une crinière sombre est souvent
+            signe d'un taux élevé de testostérone et d'une bonne nutrition, attirant davantage les femelles.
+          </p>
+        </div>
+
+        <p class="text-gray-300 text-sm leading-relaxed mb-8">
+          Leur musculature est adaptée à la puissance brute plutôt qu'à l'endurance. Ils peuvent atteindre
+          des vitesses de 80 km/h sur de courtes distances lors d'embuscades coordonnées.
+        </p>
+
+        <!-- Bloc image + texte côte à côte -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+          <!-- 💡 Remplace "lionne.jpg" par une photo de lionne -->
+          <div
+            class="rounded-xl h-52 bg-neutral-700"
+            style="background-image: url('Image/photos\ lionne.jpg'); background-size: cover; background-position: center;">
+          </div>
+
+          <div class="bg-neutral-800 rounded-xl p-5">
+            <h3 class="text-lg italic font-bold text-white mb-3">Structure Sociale</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Contrairement aux autres félins solitaires, les lions vivent en "troupes" (prides).
+              Une troupe est généralement composée de femelles apparentées, de leurs petits et
+              d'un petit groupe de mâles dominants. Cette coopération permet de chasser des
+              proies massives comme le buffle ou la girafe.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Section 2 : Habitat -->
+        <h2 class="text-2xl italic font-bold text-white mb-5 border-b border-neutral-700 pb-3">
+          Habitat et Territoire
+        </h2>
+
+        <p class="text-gray-300 text-sm leading-relaxed mb-10">
+          Bien qu'historiquement présents sur presque tout le continent, les lions sont aujourd'hui confinés
+          à des réserves et parcs nationaux fragmentés. Ils préfèrent les savanes arborées, les prairies et
+          les zones semi-désertiques. Leur territoire peut s'étendre sur plus de 200 km² selon la
+          disponibilité des proies.
+        </p>
+
+        <!-- ===== POUR ALLER PLUS LOIN ===== -->
+        <div class="border border-neutral-700 rounded-xl p-6">
+          <h3 class="text-xl italic font-bold text-white mb-5">Pour aller plus loin</h3>
+
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-start gap-4">
+              <span class="text-amber-500 text-lg mt-0.5">📄</span>
+              <div>
+                <p class="text-white text-sm font-bold">Le Déclin des Populations de Lions</p>
+                <p class="text-gray-500 text-xs mt-1">
+                  Rapport complet de l'UICN sur les menaces contemporaines.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-amber-500 text-lg mt-0.5">▶</span>
+              <div>
+                <p class="text-white text-sm font-bold">Vivre avec les Lions</p>
+                <p class="text-gray-500 text-xs mt-1">
+                  Documentaire sur la coexistence entre éleveurs Masai et prédateurs.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-amber-500 text-lg mt-0.5">🗺</span>
+              <div>
+                <p class="text-white text-sm font-bold">Atlas des Zones de Conservation</p>
+                <p class="text-gray-500 text-xs mt-1">
+                  Cartographie interactive des corridors de migration en Afrique de l'Est.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <!-- ===== SIDEBAR : ARTICLES CONNEXES ===== -->
+      <aside class="md:w-64 flex flex-col gap-6">
+
+        <p class="text-xs tracking-widest text-gray-400 uppercase border-b border-neutral-700 pb-3">
+          Articles Connexes
+        </p>
+
+        <!-- Connexe 1 : Léopard -->
+        <!-- 💡 Remplace "leopard-side.jpg" par une photo de léopard -->
+        <a href="detail.html" class="group flex flex-col gap-2">
+          <div
+            class="h-36 rounded-xl bg-neutral-700"
+            style="background-image: url('Image/4666ee87-e8e2-4a74-9468-c109abbbae2f.jpg'); background-size: cover; background-position: center;">
+          </div>
+          <p class="text-xs tracking-widest text-amber-500 uppercase">Felidae</p>
+          <p class="text-sm italic font-bold text-white group-hover:text-amber-400 transition">
+            Le Léopard : Maître de la Discrétion
+          </p>
+        </a>
+
+        <!-- Connexe 2 : Éléphant -->
+        <!-- 💡 Remplace "elephant-side.jpg" par une photo d'éléphant -->
+        <a href="detail.html" class="group flex flex-col gap-2">
+          <div
+            class="h-36 rounded-xl bg-neutral-700"
+            style="background-image: url('Image/f22f3a92-f831-4b10-97ce-8abe6f3cd7fd.jpg'); background-size: cover; background-position: center;">
+          </div>
+          <p class="text-xs tracking-widest text-amber-500 uppercase">Elephantidae</p>
+          <p class="text-sm italic font-bold text-white group-hover:text-amber-400 transition">
+            Éléphants : Mémoire de la Savane
+          </p>
+        </a>
+
+        <!-- Connexe 3 : Hyène -->
+        <!-- 💡 Remplace "hyene-side.jpg" par une photo d'hyène -->
+        <a href="detail.html" class="group flex flex-col gap-2">
+          <div
+            class="h-36 rounded-xl bg-neutral-700"
+            style="background-image: url('Image/photos-hyène.jpg'); background-size: cover; background-position: center;">
+          </div>
+          <p class="text-xs tracking-widest text-amber-500 uppercase">Hyaenidae</p>
+          <p class="text-sm italic font-bold text-white group-hover:text-amber-400 transition">
+            L'Hyène Tachetée : Concurrent Direct
+          </p>
+        </a>
+
+      </aside>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-neutral-950 border-t border-neutral-800 px-6 py-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div>
+        <p class="font-bold italic text-white text-lg mb-3">Digital Field Journal</p>
+        <p class="text-gray-500 text-xs leading-relaxed">
+          © 2024 Digital Field Journal. All scientific data curated for educational use.
+          Notre mission est de documenter la biodiversité mondiale pour les générations futures.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-3 text-sm text-gray-400">
+        <a href="#" class="hover:text-amber-400 transition">Bibliography</a>
+        <a href="#" class="hover:text-amber-400 transition">Research Archives</a>
+      </div>
+
+      <div class="flex flex-col gap-3 text-sm text-gray-400">
+        <a href="#" class="hover:text-amber-400 transition">Institutional Access</a>
+        <a href="#" class="hover:text-amber-400 transition">Ethical Guidelines</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
