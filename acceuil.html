@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafariPedia</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    
+    @theme {
+      --color-safari-gold: #D4A017;
+      --color-safari-dark: #141414;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-900 text-white">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4">
+    <a href="index.html" class="text-white font-bold italic text-xl">SafariPedia</a>
+
+    <!-- Liens desktop -->
+    <ul class="hidden md:flex gap-8 text-xs tracking-widest text-gray-300">
+      
+      <li><a href="#" class="text-amber-400 transition">ACCEUIL</a></li>
+      <li><a href="Catégories.html" class="hover:text-amber-400 transition">CATÉGORIES</a></li>
+      <li><a href="#" class="hover:text-amber-400 transition">PROFIL</a></li>
+    </ul>
+
+    <!-- Menu burger mobile -->
+    <button class="md:hidden text-white text-2xl">☰</button>
+  </nav>
+
+
+  <!-- ===================== HERO ===================== -->
+ 
+  <section
+    class="relative h-screen flex flex-col items-center justify-center text-center px-4"
+    style="background-image: url('Image/Safari-3.jpg'); background-size: cover; background-position: center;">
+
+    <!-- Overlay sombre -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative z-10 flex flex-col items-center">
+      <h1 class="text-6xl md:text-8xl italic font-bold text-white mb-4 drop-shadow-lg">
+        SafariPedia
+      </h1>
+      <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+        SafariPedia est une encyclopédie en ligne dédiée à la faune africaine.
+        Elle permet de découvrir les animaux du continent africain à travers des fiches
+        simples, éducatives et illustrées, tout en sensibilisant à leur protection.
+      </p>
+
+      <!-- Barre de recherche factice -->
+      <input
+        type="text"
+        placeholder="Rechercher une espèce, un écosystème..."
+        class="w-full max-w-lg px-6 py-3 rounded-full bg-white/10 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 backdrop-blur-sm"
+      />
+    </div>
+  </section>
+
+
+  <!-- ===================== CATÉGORIES ===================== -->
+  <section class="px-6 py-16 max-w-5xl mx-auto">
+
+    <p class="text-xs tracking-widest text-amber-500 uppercase mb-1">
+      Bienvenue sur SafariPedia
+    </p>
+    <h2 class="text-3xl italic font-bold text-white mb-8">
+      Explorer par Catégories
+    </h2>
+
+    <!-- Grille 2x2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <!-- CARTE 1 : Mammifères -->
+      <!-- 💡 Remplace "lion.jpg" par ton image de lion/mammifère -->
+      <div
+        class="relative rounded-xl overflow-hidden h-64 md:row-span-2 md:h-auto"
+        style="background-image: url('Image/Lion.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-0 left-0 p-5">
+          <h3 class="text-2xl italic font-bold text-white">Mammifères</h3>
+          <p class="text-gray-300 text-xs mt-1 max-w-xs">
+            L'étude des grands prédateurs et de la mégafaune emblématique du continent.
+          </p>
+          <a href="articles.html" class="text-amber-400 text-xs mt-3 inline-block tracking-widest uppercase hover:underline">
+            Consulter les archives →
+          </a>
+        </div>
+      </div>
+
+      <!-- CARTE 2 : Conservation -->
+      <!-- 💡 Remplace "conservation.jpg" par une petite image en bas de cette carte -->
+      <div
+        class="relative rounded-xl overflow-hidden h-52"
+        style="background-image: url('Image/Grenouillle.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="absolute bottom-0 left-0 p-4">
+          <h3 class="text-xl italic font-bold text-white">Amphibiens</h3>
+          <p class="text-gray-300 text-xs mt-1">
+            Plus de 1500 espèces répertoriées dans nos registres amphibiens.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARTE 3 : Oiseaux -->
+      <!-- 💡 Remplace "oiseaux.jpg" par ton image d'oiseau -->
+      <div
+        class="relative rounded-xl overflow-hidden h-52"
+        style="background-image: url('Image/Oiseaux.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="absolute bottom-0 left-0 p-4">
+          <h3 class="text-xl italic font-bold text-white">Oiseaux</h3>
+          <p class="text-gray-300 text-xs mt-1">
+            Plus de 2000 espèces répertoriées dans nos registres ornithologiques.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARTE 4 : Reptiles -->
+      <!-- 💡 Remplace "reptiles.jpg" par ton image de crocodile/reptile -->
+      <div
+        class="relative rounded-xl overflow-hidden h-52"
+        style="background-image: url('Image/Serpent.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute bottom-0 left-0 p-4">
+          <h3 class="text-xl italic font-bold text-white">Reptiles</h3>
+          <p class="text-gray-300 text-xs mt-1">
+            Plus d'une panoplie de Reptiles dans notre catalogue
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== LE SAVIEZ-VOUS ===================== -->
+  <section class="px-6 py-16 max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+      <!-- 💡 Remplace "saviez-vous.jpg" par ton image -->
+      <div
+        class="rounded-xl h-80 bg-neutral-700"
+        style="background-image: url('Image/SV.jpg'); background-size: cover; background-position: center;">
+      </div>
+
+      <div>
+        <p class="text-xs tracking-widest text-amber-500 uppercase mb-4">Le Saviez-Vous ?</p>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          Chaque entrée dans notre encyclopédie est le fruit de décennies de recherches
+          sur le terrain. Nos collaborateurs utilisent des techniques d'observation non
+          invasives pour documenter la vie sauvage.
+        </p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          De la vallée du Rift au delta de l'Okavango, nous centralisons les données
+          pour offrir une ressource académique sans précédent aux chercheurs, étudiants
+          et passionnés.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-neutral-950 border-t border-neutral-800 px-6 py-10 mt-4">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      
+      <div>
+        <p class="font-bold italic text-white text-lg mb-3">SafariPedia</p>
+        <p class="text-gray-500 text-xs leading-relaxed">
+          © 2026 SafariPedia. Accessible aux élèves, étudiants 
+          et passionnés de nature, SafariPedia propose un contenu 
+          structuré, illustré et facile à comprendre, faisant d’elle un 
+          véritable outil éducatif moderne..
+        </p>
+      </div>
+
+     
+      <div class="flex flex-col gap-3 text-sm text-gray-400">
+        <a href="#" class="hover:text-amber-400 transition">Bibliographie</a>
+        <a href="#" class="hover:text-amber-400 transition">Recherche Archives</a>
+      </div>
+
+      
+      <div class="flex flex-col gap-3 text-sm text-gray-400">
+        <a href="#" class="hover:text-amber-400 transition">Catégories</a>
+        <a href="#" class="hover:text-amber-400 transition">Aide</a>
+      </div>
+
+    </div>
+
+    
+    
+  </footer>
+
+</body>
+</html>
